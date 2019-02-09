@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <title>Sun &amp; Moon</title>
+    <meta name="description" content="Sun and moon transition">
+    <meta name="author" content="Ryan Brogan">
+    <link rel="stylesheet" href="style/global.css">
+</head>
+
+<body>
+    <div id="gridwrapper">
+    <div id="photo">
+        <script>
+            var currentDate = new Date;
+            var hour = currentDate.getHours();
+            
+            if ( (hour >= 5) &&  (hour < 17) ) {
+    document.write("<img src=\"image/sunmoonday.png\">");
+            } else {
+    document.write("<img src=\"image/sunmoonnight.png\">");
+            }
+        </script>
+    </div>
+    </div>
+</body>
+</html>
